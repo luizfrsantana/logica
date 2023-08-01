@@ -21,15 +21,13 @@
             return Math.round(peso / (altura * altura));
           }
 
-          var pesoFlavio = 73;
-          var alturaFlavio = 1.71;
-          var imcFlavio = calculaImc(pesoFlavio,alturaFlavio);
-          mostra("O IMC do Flávio é " + imcFlavio);
+          var nome = prompt("Informe o seu nome")
+          var alturaInformada = prompt(nome + ", informe sua altura");
+          var pesoInformado = prompt(nome + ",Informe seu peso");
 
-          var pesoAmigo = 68;
-          var alturaAmigo = 1.72;
-          var imcAmigo = calculaImc(pesoAmigo,alturaAmigo);
-          mostra("O IMC do Amigo é " + imcAmigo);
+          var imc = calculaImc(pesoInformado, alturaInformada);
+
+          mostra(nome + ", o seu IMC calculado é " + imc);
 
 
     </script>
