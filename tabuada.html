@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+          document.write("<br>");
+          document.write("<br>");
+        }
+  
+        function mostra(texto) {
+          document.write(texto);
+          pulaLinha();
+        }
+
+        var multiplicador =1;
+        while(multiplicador <=10){
+            mostra(7 * multiplicador);
+            multiplicador++;
+        }
+        
+        mostra("FIM")
+
+        for(multiplicador = 1; multiplicador <= 10; multiplicador = multiplicador +1 ){
+            mostra(8 * multiplicador);
+        }
+
+        mostra("FIM")
+
+        for(multiplicador = 1; multiplicador <= 10; multiplicador++ ){
+            mostra(9 * multiplicador);
+        }
+
+        mostra("FIM")
+
+        for(var i = 1; i <= 10; i++ ){
+            mostra(10 * i);
+        }
+
+        mostra("FIM")
+  
+  
+        </script>
+</body>
+</html>
